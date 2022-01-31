@@ -1,4 +1,4 @@
-from simplecrypt import encrypt, decrypt
+from simplecrypt import decrypt
 import os
 def decryption():
     current_dir = os.path.abspath(os.path.dirname(__file__))
@@ -14,7 +14,7 @@ def decryption():
             plaintext = decrypt(i, encrypted)
             print(plaintext)
         except: 
-            print (i, " not correct")
+            print (i, "is not correct password")
 
 if __name__ == "__main__":
     decryption()
